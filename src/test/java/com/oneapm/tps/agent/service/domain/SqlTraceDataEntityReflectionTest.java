@@ -12,6 +12,8 @@ import java.util.Map;
 
 import static com.google.common.base.CaseFormat.LOWER_CAMEL;
 import static com.google.common.base.CaseFormat.LOWER_UNDERSCORE;
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertThat;
@@ -52,6 +54,8 @@ public class SqlTraceDataEntityReflectionTest {
         List<String> actualFieldNames = new ArrayList<>();
         Map<String, String> actualFields = new HashMap<>();
         for (Field field : dataSourceEntity.getDeclaredFields()) {
+            assertThat(field.getName(), not(containsString("_")));
+
             String nameWithUnderscore = LOWER_CAMEL.to(LOWER_UNDERSCORE, field.getName());
             actualFieldNames.add(nameWithUnderscore);
             actualFields.put(nameWithUnderscore, types.get(field.getType().toString()));
