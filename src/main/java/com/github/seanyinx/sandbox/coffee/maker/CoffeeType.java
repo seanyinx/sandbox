@@ -1,4 +1,4 @@
-package com.oneapm.coffee.maker;
+package com.github.seanyinx.sandbox.coffee.maker;
 
 public enum CoffeeType {
     CAPPUCCINO,

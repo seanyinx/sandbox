@@ -1,17 +1,16 @@
-package com.oneapm.coffee.maker;
-
-import org.junit.Test;
+package com.github.seanyinx.sandbox.coffee.maker;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.junit.Test;
 
-import static com.oneapm.coffee.maker.CoffeeType.BLACK;
-import static com.oneapm.coffee.maker.CoffeeType.CAPPUCCINO;
-import static com.oneapm.coffee.maker.CoffeeType.ESPRESSO;
-import static com.oneapm.coffee.maker.CoffeeType.LATTE;
-import static com.oneapm.coffee.maker.CoffeeType.MOCHA;
+import static com.github.seanyinx.sandbox.coffee.maker.CoffeeType.BLACK;
+import static com.github.seanyinx.sandbox.coffee.maker.CoffeeType.CAPPUCCINO;
+import static com.github.seanyinx.sandbox.coffee.maker.CoffeeType.ESPRESSO;
+import static com.github.seanyinx.sandbox.coffee.maker.CoffeeType.LATTE;
+import static com.github.seanyinx.sandbox.coffee.maker.CoffeeType.MOCHA;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.contains;
+import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
 
 public class CoffeeMakerTest {
 

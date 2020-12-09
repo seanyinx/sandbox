@@ -1,10 +1,10 @@
-package com.oneapm.coffee.maker;
+package com.github.seanyinx.sandbox.coffee.maker;
 
-import static com.oneapm.coffee.maker.CoffeeType.BLACK;
-import static com.oneapm.coffee.maker.CoffeeType.CAPPUCCINO;
-import static com.oneapm.coffee.maker.CoffeeType.ESPRESSO;
-import static com.oneapm.coffee.maker.CoffeeType.LATTE;
-import static com.oneapm.coffee.maker.CoffeeType.MOCHA;
+import static com.github.seanyinx.sandbox.coffee.maker.CoffeeType.BLACK;
+import static com.github.seanyinx.sandbox.coffee.maker.CoffeeType.CAPPUCCINO;
+import static com.github.seanyinx.sandbox.coffee.maker.CoffeeType.ESPRESSO;
+import static com.github.seanyinx.sandbox.coffee.maker.CoffeeType.LATTE;
+import static com.github.seanyinx.sandbox.coffee.maker.CoffeeType.MOCHA;
 
 public class CoffeeMaker {
     static final String WATER = "Water";

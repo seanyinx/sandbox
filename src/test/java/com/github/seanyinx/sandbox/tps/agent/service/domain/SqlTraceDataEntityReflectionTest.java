@@ -1,4 +1,4 @@
-package com.oneapm.tps.agent.service.domain;
+package com.github.seanyinx.sandbox.tps.agent.service.domain;
 
 import org.junit.Test;
 
